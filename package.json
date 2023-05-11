@@ -1,5 +1,5 @@
 {
-  "name": "jdotenv",
+  "name": "copy-env-json",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -7,7 +7,7 @@
     "start": "node index.mjs"
   },
   "bin": {
-    "jdotenv": "bin/index.mjs"
+    "copy-env-json": "bin/index.mjs"
   },
   "dependencies": {
     "clipboardy": "^3.0.0",
