@@ -1,10 +1,13 @@
 {
-  "name": "env-to-json",
+  "name": "jdotenv",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "node index.mjs"
+  },
+  "bin": {
+    "jdotenv": "bin/index.mjs"
   },
   "dependencies": {
     "clipboardy": "^3.0.0",
