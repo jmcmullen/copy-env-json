@@ -1,17 +1,33 @@
 {
   "name": "copy-env-json",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "bin": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.mjs"
-  },
-  "bin": {
-    "copy-env-json": "bin/index.mjs"
+    "dev": "pnpm build && pnpm start",
+    "start": "node dist/index.js",
+    "build": "tsup src/index.ts --format cjs,esm --clean --minify",
+    "prepublish": "pnpm build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "clipboardy": "^3.0.0",
     "dotenv": "^16.0.3",
     "inquirer": "^9.2.2"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.2",
+    "@types/inquirer": "^9.0.3",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
   }
 }

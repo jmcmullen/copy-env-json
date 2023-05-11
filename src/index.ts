@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+
 import dotenv from 'dotenv';
 import inquirer from 'inquirer';
 import clipboardy from 'clipboardy';
