@@ -1,6 +1,6 @@
 # Dot Env to JSON
 
-A tiny cli tool to convert .env files to JSON.
+A tiny cli tool to convert .env files to JSON and then copy the results to your clipboard.
 
 https://github.com/jmcmullen/copy-env-json/assets/6767542/175d58b7-d336-4044-8921-254e1a37b5e5
 
